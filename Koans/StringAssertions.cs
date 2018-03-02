@@ -9,14 +9,12 @@ namespace AssertionKoans.Koans
 		//	[Step(1)]
 		public void StringContainsUsingUnidaysShould()
 		{
-			// does this say much about the assertion
 			"hello world".ShouldContain("badger");
 		}
 
 		//[Step(2)]
 		public void StringContainsUsingFluentAssertions()
 		{
-			// much better?
 			"hello world".Should().Contain("badger");
 		}
 
@@ -28,11 +26,35 @@ namespace AssertionKoans.Koans
 			message.ShouldEndWith("badger");
 		}
 
-		[Step(4)]
+		//[Step(4)]
 		public void StringStartsAndEndsWithUsingFluentAssertions()
 		{
 			var message = "hello world";
 			message.Should().StartWith("goodbye").And.EndWith("badger");
+		}
+
+		//[Step(5)]
+		public void IgnoringCaseWithUsingUnidaysShould()
+		{
+			"HELLO world".ShouldBeEqualIgnoringCase("goodbye badger");
+		}
+
+		//[Step(6)]
+		public void IgnoringCaseWithUsingFluentAssertions()
+		{
+			"HELLO world".Should().BeEquivalentTo("goodbye badger");
+		}
+
+		//[Step(7)]
+		public void LengthWithUsingUnidaysShould()
+		{
+			"Hello!".Length.ShouldEqual(5);
+		}
+
+		[Step(8)]
+		public void LengthWithUsingFluentAssertions()
+		{
+			"Hello!".Should().HaveLength(5);
 		}
 	}
 }

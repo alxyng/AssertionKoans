@@ -105,10 +105,5 @@ namespace AssertionKoans.Engine.Extensions
 		{
 			Assert.True(actual.StartsWith(expected));
 		}
-
-		public static void ShouldBeNullOrEmpty(this string actual)
-		{
-			Assert.True(string.IsNullOrEmpty(actual), "Expected null or empty, got: " + actual);
-		}
 	}
 }
