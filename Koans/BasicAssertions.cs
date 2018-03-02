@@ -68,20 +68,5 @@ namespace AssertionKoans.Koans
 		    // this gives the same info, but is a little bit more succinct
 		    b.Should().BeNull();
 	    }
-
-//	   // [Step(9)]
-//		public void badger()
-//	    {
-//		    var a = new DateTime(2018, 10, 1);
-//			a.Year.ShouldEqual(2019);
-//			a.Month.ShouldEqual(11);
-//	    }
-//
-//	    [Step(9)]
-//	    public void badger2()
-//	    {
-//		    var a = new DateTime(2018, 10, 1);
-//		    a.Should().HaveYear(2019).And.HaveMonth(11);
-//		}
 	}
 }

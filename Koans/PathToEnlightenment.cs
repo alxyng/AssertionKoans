@@ -10,7 +10,8 @@ namespace AssertionKoans.Koans
             {
                 typeof(BasicAssertions), 
                 typeof(StringAssertions),
-                typeof(NumericAssertions)
+                typeof(NumericAssertions),
+                typeof(DateTimeAssertions)
             };
         } 
     }
