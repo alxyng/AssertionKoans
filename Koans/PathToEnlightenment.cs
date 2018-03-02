@@ -1,4 +1,3 @@
-using System;
 using AssertionKoans.Engine;
 
 namespace AssertionKoans.Koans
@@ -7,8 +6,7 @@ namespace AssertionKoans.Koans
     {
         public PathToEnlightenment()
         {
-            Types = new Type[] {
-                };
+	        Types = new[] {typeof(BasicAssertions), typeof(StringAssertions)};
         } 
     }
 }
