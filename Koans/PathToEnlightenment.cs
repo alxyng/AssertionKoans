@@ -6,7 +6,12 @@ namespace AssertionKoans.Koans
     {
         public PathToEnlightenment()
         {
-	        Types = new[] {typeof(BasicAssertions), typeof(StringAssertions)};
+	        Types = new[] 
+            {
+                typeof(BasicAssertions), 
+                typeof(StringAssertions),
+                typeof(NumericAssertions)
+            };
         } 
     }
 }

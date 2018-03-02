@@ -51,7 +51,7 @@ namespace AssertionKoans.Koans
 			"Hello!".Length.ShouldEqual(5);
 		}
 
-		[Step(8)]
+		//[Step(8)]
 		public void LengthWithUsingFluentAssertions()
 		{
 			"Hello!".Should().HaveLength(5);
