@@ -38,7 +38,7 @@ namespace AssertionKoans.Koans
             7.March(2018).Should().BeMoreThan(2.Days()).After(2.March(2018));
         }
 
-        [Step(5)]
+        //[Step(5)]
         public void CloseTo()
         {
             var firstDate = new DateTime(2018, 03, 07, 19, 00, 00);

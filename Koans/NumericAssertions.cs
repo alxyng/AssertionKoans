@@ -39,7 +39,7 @@ namespace AssertionKoans.Koans
             12.Should().BeInRange(1, 10);
         }
 
-        [Step(6)]
+        //[Step(6)]
         public void Approximately()
         {
             3.145F.Should().BeApproximately(3.14159F, 0.0005F);
