@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using AssertionKoans.Engine;
-using AssertionKoans.Engine.Extensions;
 using FluentAssertions;
 
 namespace AssertionKoans.Koans

@@ -12,7 +12,8 @@ namespace AssertionKoans.Koans
                 typeof(StringAssertions),
                 typeof(NumericAssertions),
                 typeof(DateTimeAssertions),
-                typeof(CollectionAssertions)
+                typeof(CollectionAssertions),
+                typeof(ExceptionAssertions)
             };
         } 
     }
