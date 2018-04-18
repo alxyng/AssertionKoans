@@ -12,14 +12,14 @@ namespace AssertionKoans.Koans
             public string StringValue { get; set; }
         }
 
-		//[Step(1)]
+		[Step(1)]
 		public void CollectionShouldBeEmpty()
 		{
 			var array = new int[] { 0 };
             array.Should().BeEmpty();
 		}
 
-        //[Step(2)]
+        [Step(2)]
         public void SimpleEquality()
         {
             var item = new TestObject { IntValue = 1 };
@@ -29,7 +29,7 @@ namespace AssertionKoans.Koans
            first.Should().Equal(second); // Reference equality
         }
 
-        //[Step(3)]
+        [Step(3)]
         public void SimpleEquivalence()
         {
             var first = new [] { new TestObject { IntValue = 1 } };
@@ -38,7 +38,7 @@ namespace AssertionKoans.Koans
             first.Should().BeEquivalentTo(FILL_ME_IN); // Equivalence comparison
         }
 
-        //[Step(4)]
+        [Step(4)]
         public void Ordering()
         {
             var descendingCollection = new [] { 5, 4, 3, 2, 1 };
@@ -46,7 +46,7 @@ namespace AssertionKoans.Koans
             descendingCollection.Should().BeInAscendingOrder();
         }
 
-        //[Step(5)]
+        [Step(5)]
         public void ChainedAssertions()
         {
             var collection = new object [] {  }; // Make a collection that meets the criteria
@@ -61,7 +61,7 @@ namespace AssertionKoans.Koans
                 .And.NotContain(x => ((int) x) < 0);
         }
 
-        //[Step(6)]
+        [Step(6)]
         public void PropertyAssertions()
         {
             var collection = new TestObject [] { };
@@ -73,7 +73,7 @@ namespace AssertionKoans.Koans
                 .And.OnlyContain(x => !string.IsNullOrWhiteSpace(x.StringValue) && x.StringValue.Length > 5);
         }
 
-        //[Step(7)]
+        [Step(7)]
         public void DictionaryAssertions()
         {
             var dictionary = new Dictionary<string, int>();

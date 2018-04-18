@@ -6,19 +6,19 @@ namespace AssertionKoans.Koans
 {
 	class StringAssertions : Koan
 	{
-		//	[Step(1)]
+		[Step(1)]
 		public void StringContainsUsingUnidaysShould()
 		{
 			"hello world".ShouldContain("badger");
 		}
 
-		//[Step(2)]
+		[Step(2)]
 		public void StringContainsUsingFluentAssertions()
 		{
 			"hello world".Should().Contain("badger");
 		}
 
-		//[Step(3)]
+		[Step(3)]
 		public void StringStartsAndEndsWithUsingUnidaysShould()
 		{
 			var message = "hello world";
@@ -26,32 +26,32 @@ namespace AssertionKoans.Koans
 			message.ShouldEndWith("badger");
 		}
 
-		//[Step(4)]
+		[Step(4)]
 		public void StringStartsAndEndsWithUsingFluentAssertions()
 		{
 			var message = "hello world";
 			message.Should().StartWith("goodbye").And.EndWith("badger");
 		}
 
-		//[Step(5)]
+		[Step(5)]
 		public void IgnoringCaseWithUsingUnidaysShould()
 		{
 			"HELLO world".ShouldBeEqualIgnoringCase("goodbye badger");
 		}
 
-		//[Step(6)]
+		[Step(6)]
 		public void IgnoringCaseWithUsingFluentAssertions()
 		{
 			"HELLO world".Should().BeEquivalentTo("goodbye badger");
 		}
 
-		//[Step(7)]
+		[Step(7)]
 		public void LengthWithUsingUnidaysShould()
 		{
 			"Hello!".Length.ShouldEqual(5);
 		}
 
-		//[Step(8)]
+		[Step(8)]
 		public void LengthWithUsingFluentAssertions()
 		{
 			"Hello!".Should().HaveLength(5);

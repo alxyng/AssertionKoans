@@ -21,14 +21,14 @@ namespace AssertionKoans.Koans
 			var thing = new TestObject { };
   
 			thing.Should()
-			.BeOfType<TestObject>()
-			.And.BeEquivalentTo(new
-			{
-				IntValue = 5,
-				StringValue = "hello",
-				DateValue = 10.January(1986) // You'll need to add this property
-				// The float value doesn't matter
-			});
+				.BeOfType<TestObject>()
+				.And.BeEquivalentTo(new
+				{
+					IntValue = 5,
+					StringValue = "hello",
+					DateValue = 10.January(1986) // You'll need to add this property
+					// The float value doesn't matter
+				});
 		}
     }
 }

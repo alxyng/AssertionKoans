@@ -6,40 +6,40 @@ namespace AssertionKoans.Koans
 {
 	class NumericAssertions : Koan
 	{
-        //[Step(1)]
+        [Step(1)]
         public void GreaterThanComparisonUsingUnidaysShould()
         {
             (-1).ShouldBeGreaterThan(0);
         }
 
-        //[Step(2)]
+        [Step(2)]
         public void GreaterThanUsingFluentAssertions()
         {
             // also has less than equivalent
             (-1).Should().BeGreaterThan(0);
         }
 
-        //[Step(3)]
+        [Step(3)]
         public void GreaterThanOrEqualUsingFluentAssertions()
         {
             // also has less than equivalent
             (-1).Should().BeGreaterOrEqualTo(1);
         }
 
-        //[Step(4)]
+        [Step(4)]
         public void BePositiveUsingFluentAssertions()
         {
             // also has negative equivalent            
             (-1).Should().BePositive();
         }
 
-        //[Step(5)]
+        [Step(5)]
         public void RangeComparison()
         {
             12.Should().BeInRange(1, 10);
         }
 
-        //[Step(6)]
+        [Step(6)]
         public void Approximately()
         {
             3.145F.Should().BeApproximately(3.14159F, 0.0005F);

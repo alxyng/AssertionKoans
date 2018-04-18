@@ -19,7 +19,7 @@ namespace AssertionKoans.Koans
             }
         }
 
-        //[Step(1)]
+        [Step(1)]
         public void ExceptionAssertionsAreReallyEasy()
         {
             var stub = new Stub();
@@ -31,7 +31,7 @@ namespace AssertionKoans.Koans
                 .Where(x => x.ParamName == "alsoUnhelpful");
         }
 
-        //[Step(2)]
+        [Step(2)]
         public void StaticMethodsAreHarder()
         {
             Action action = () => Stub.StaticMethod();
