@@ -35,7 +35,7 @@ namespace AssertionKoans.Koans
         {            
             2.March(2018).Should().BeLessThan(2.Days()).Before(4.March(2018));
             2.March(2018).Should().BeWithin(2.Days()).Before(5.March(2018));
-            7.March(2018).Should().BeMoreThan(2.Days()).After(2.March(2018));
+            2.March(2018).Should().BeMoreThan(2.Days()).After(2.March(2018));
         }
 
         //[Step(5)]

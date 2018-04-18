@@ -11,14 +11,14 @@ namespace AssertionKoans.Koans
 	    public void BasicAssertionUsingUnidaysShould()
 	    {
 			// observe failure message, nice and clear right?
-		    "hello".ShouldEqual("helll");
+		    "hellllo".ShouldEqual("hello");
 	    }
 
 	    //[Step(2)]
 	    public void BasicAssertionUsingFluentAssertions()
 	    {
 			// how does the error message compare with the previous step?
-		    "hello".Should().Be("helll");
+		    "hellllo".Should().Be("hello");
 	    }
 
 	  //  [Step(3)]
